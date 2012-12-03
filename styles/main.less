@@ -5,6 +5,7 @@
 
 @import "variables.less";
 @import "mixins.less";
+@import "dropdowns.less";
 
 // Display in IE6-9 and FF3
 // -------------------------
@@ -332,4 +333,96 @@ blockquote:before,
 blockquote:after {
   content: "";
 }
+
+
+//
+// Page Structure
+// -----------------
+
+.header {
+  height: @topbarHeight;
+  margin: 10px @pageGutter 0 @pageGutter;
+  
+  #font > .shorthand(@fontSizeLarge);
+
+  .brand {
+    float: left;
+
+    img {
+      height: @topbarHeight;
+    }
+  }
+
+  .user {
+    float: right;
+    
+    #font > .shorthand(@fontSizeMini, normal, @topbarHeight);
+
+    a {
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+    .caret {
+        vertical-align: middle;
+    }
+  }
+}
+
+.structure {
+  margin: 10px @pageGutter;
+}
+
+.footer {
+  margin: 0 @pageGutter 10px @pageGutter;
+  overflow: hidden;
+
+  #font > .shorthand(@fontSizeMini);
+
+  .wrapper {
+    float: right;
+  }
+}
+
+
+//
+// Side Menu
+// -----------------
+
+.structure .side-menu {
+  float: left;
+  width: 201px;
+  z-index: 10;
+  padding-top: 40px;
+
+  .nav {
+    list-style: none;
+
+    li {
+        padding: 20px;
+        .border-left-radius(@borderRadiusLarge);
+        #font > .shorthand(@fontSizeLarge);
+
+        &.active {
+            border: 1px solid darken(@bodyBackground, 10%);
+            border-right: 1px solid @white;
+            background-color: @white;
+        }
+    }
+  }
+}
+
+
+//
+// Main Content Area
+// -----------------
+
+.structure .main {
+  margin-left: 200px;
+  padding: 10px;
+  background-color: @white;
+  border: 1px solid darken(@bodyBackground, 10%);
+  .border-radius(@borderRadiusLarge);
+}
+
 

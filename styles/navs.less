@@ -1,0 +1,67 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// BASE CLASS
+// ----------
+
+.nav {
+  margin-left: 0;
+  margin-bottom: @baseLineHeight;
+  list-style: none;
+}
+
+// Make links block level
+.nav > li > a {
+  display: block;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  //background-color: @grayLighter;
+}
+
+// TABS
+// ----
+
+// Common styles
+.nav-tabs {
+  .clearfix();
+
+  // Give the tabs something to sit on
+    border-bottom: 1px solid @citeplasmDarker;
+
+  // Make the list-items overlay the bottom border
+  > li {
+    float: left;
+    margin-bottom: -1px;
+
+    // Actual tabs (as links)
+    > a {
+      padding-right: 12px;
+      padding-left: 12px;
+      margin-right: 2px;
+      line-height: 14px; // keeps the overall height an even number
+      padding-top: 8px;
+      padding-bottom: 8px;
+      line-height: @baseLineHeight;
+      border: 1px solid transparent;
+      .border-radius(4px 4px 0 0);
+    }
+
+    // Active state, and it's :hover to override normal :hover
+    &.active a {//, &.active a:hover {
+      color: @citeplasmDark;
+      background-color: @bodyBackground;
+      border: 1px solid @citeplasmDarker;
+      border-bottom-color: @bodyBackground;
+      cursor: default;
+    }
+  }
+}
+
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+}
+

@@ -5,6 +5,8 @@
 
 @import "variables.less";
 @import "mixins.less";
+@import "navs.less";
+@import "dropdowns.less";
 
 // Display in IE6-9 and FF3
 // -------------------------
@@ -331,5 +333,74 @@ q:after,
 blockquote:before,
 blockquote:after {
   content: "";
+}
+
+
+// Header / Topbar
+// ------------------------------------
+
+.header {
+  height: @topbarHeight;
+  padding: 0 @pageGutter;
+  //background-color: @citeplasmDark;
+  #gradient > .vertical(@citeplasmLighter, @citeplasmDark);
+  border-bottom: 1px solid @citeplasmDarker;
+
+  .brand {
+    float: left;
+    height: @topbarHeight;
+    line-height: @topbarHeight;
+
+    img {
+      height: 24px;
+    }
+  }
+
+  .nav {
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-top: @topbarHeight - 33px;
+
+    > li > a {
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      #font > .shorthand(@fontSizeLarge);
+      color: @citeplasmLight;
+
+      &:hover {
+        color: @citeplasmDarker;
+      }
+    }
+
+    > li.active a {
+      color: @citeplasmDark;
+    }
+  }
+
+  .user {
+    height: 32px;
+    margin-top: (@topbarHeight - 32px) / 2;
+    #font > .shorthand(@fontSizeSmall);
+
+    a {
+      line-height: 32px;
+      color: @citeplasmLight;
+      text-decoration: none;
+
+      &:hover {
+        color: @citeplasmDarker;
+      }
+    }
+
+    img {
+      margin: 0 5px;
+    }
+
+    .caret {
+        border-top-color: @citeplasmDarker;
+    }
+  }
 }
 

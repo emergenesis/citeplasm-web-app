@@ -9,6 +9,7 @@
 @import "bootstrap/less/type.less";
 @import "bootstrap/less/scaffolding.less";
 @import "bootstrap/less/dropdowns.less";
+@import "font-awesome.less";
 
 
 // Top bar
@@ -69,6 +70,47 @@
 
   background-color: darken(@grayLighter, 3%);
   border-right: 1px solid @borderColor;
+
+  .main-menu, .bottom-menu {
+    overflow: hidden;
+    li {
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+    
+    [class^="icon-"],
+    [class*=" icon-"] {
+      color: @grayLight;
+    }
+
+    li.active [class^="icon-"],
+    li.active [class*=" icon-"],
+    a:hover [class^="icon-"],
+    a:hover [class*=" icon-"] {
+      color: @gray;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+  .main-menu {
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .bottom-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: @leftbarWidth;
+    margin-bottom: 20px;
+  }
 }
 
 // View Container

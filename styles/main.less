@@ -11,3 +11,87 @@
 @import "bootstrap/less/mixins.less";
 
 
+// Top bar
+// ------------------------------------
+// runs across the top of the screen
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: @topbarHeight;
+  overflow: hidden;
+
+  background-color: @grayDark;
+  z-index: 10;
+}
+
+
+// Left (nav) bar
+// ------------------------------------
+// runs down the left of the screen
+
+.leftbar {
+  position: fixed;
+  top: @topbarHeight;
+  left: 0;
+  bottom: 0;
+  width: @leftbarWidth - 1; // -1 to allow for border
+  overflow: hidden;
+
+  background-color: darken(@grayLighter, 3%);
+  border-right: 1px solid @borderColor;
+}
+
+// View Container
+// ------------------------------------
+// the main viewport, filling the rest
+
+.view {
+  position: fixed;
+  top: @topbarHeight;
+  left: @leftbarWidth;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  > .toolbar {
+    position: relative; // needed to z-index this to show the drop-shadow over other elements
+    height: @toolbarHeight;
+    z-index: 5;
+
+    overflow: hidden;
+
+    border-bottom: 1px @borderColor;
+    .box-shadow(0 2px 5px @grayLight);
+  }
+
+  .main-wrapper {
+    height: 100%;
+
+    // the menu area is docked to the left of the viewport
+    > .menu {
+      float: left;
+      height: 100%;
+      width: @viewMenuWidth;
+
+      // provide a vertical scrollbar if necessary
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      background-color: lighten(@grayLighter, 3%);
+      border-right: 1px solid @borderColor;
+    }
+
+    // the main content area fills the rest of the view container
+    > .main {
+      height: 100%;
+      overflow: auto;
+      margin-left: @viewMenuWidth;
+    }
+  }
+}
+
+
+

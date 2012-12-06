@@ -8,7 +8,7 @@
 @import "bootstrap/less/reset.less";
 @import "bootstrap/less/type.less";
 @import "bootstrap/less/scaffolding.less";
-@import "bootstrap/less/mixins.less";
+@import "bootstrap/less/dropdowns.less";
 
 
 // Top bar
@@ -22,9 +22,36 @@
   right: 0;
   height: @topbarHeight;
   overflow: hidden;
-
-  background-color: @grayDark;
   z-index: 10;
+
+  //background-color: @topbarColor;
+  border-bottom: 1px solid darken(@topbarColor, 15%);
+  #gradient > .vertical(lighten(@topbarColor, 10%), @topbarColor);
+
+  .brand {
+    display: block;
+    float: left;
+    margin-top: (@topbarHeight - @topbarLogoHeight) / 2;
+    margin-left: @topbarGutter;
+
+    img {
+      height: @topbarHeight - 15px;
+    }
+  }
+
+  .user {
+    display: block;
+    float: right;
+    margin-top: (@topbarHeight - 24px) / 2;
+    margin-right: @topbarGutter;
+
+    .caret {
+      display: inline-block;
+      margin-left: 3px;
+      vertical-align: middle;
+      border-top-color: #F1F1F1;
+    }
+  }
 }
 
 
@@ -64,7 +91,7 @@
     overflow: hidden;
 
     border-bottom: 1px @borderColor;
-    .box-shadow(0 2px 5px @grayLight);
+    .box-shadow(0 1px 9px @grayLight);
   }
 
   .main-wrapper {

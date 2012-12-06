@@ -1415,9 +1415,9 @@ ul.icons li .icon-large:before {
   z-index: 5;
   overflow: hidden;
   border-bottom: 1px #c8c8c8;
-  -webkit-box-shadow: 0 1px 9px #999999;
-  -moz-box-shadow: 0 1px 9px #999999;
-  box-shadow: 0 1px 9px #999999;
+  -webkit-box-shadow: 0 0 5px #999999;
+  -moz-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
 }
 .view .main-wrapper {
   height: 100%;

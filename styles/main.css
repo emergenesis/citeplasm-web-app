@@ -2177,7 +2177,6 @@ ul.icons {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
   height: 40px;
   overflow: hidden;
   background-color: #9b58ae;
@@ -2214,7 +2213,7 @@ ul.icons {
 }
 .leftbar {
   position: fixed;
-  top: 40px;
+  top: 41px;
   bottom: 0;
   left: 0;
   width: 59px;
@@ -2278,72 +2277,71 @@ ul.icons {
   left: 60px;
   overflow: hidden;
 }
-.view > .toolbar {
-  position: relative;
-  z-index: 5;
-  height: 60px;
+.view > .headline {
+  position: fixed;
+  top: 40px;
+  right: 300px;
+  left: 60px;
+  height: 40px;
   overflow: hidden;
-  border-bottom: 1px #c8c8c8;
-  -webkit-box-shadow: 0 0 5px #999999;
-  -moz-box-shadow: 0 0 5px #999999;
-  box-shadow: 0 0 5px #999999;
+  border-bottom: 1px solid #c8c8c8;
 }
-.view > .toolbar > div {
-  height: 60px;
+.view > .headline > div {
+  height: 40px;
 }
-.view > .toolbar > .title {
-  padding-left: 20px;
-  font-size: 36px;
-  line-height: 60px;
+.view > .headline > .title {
+  padding-left: 10px;
+  font-size: 28px;
+  line-height: 40px;
 }
-.view > .toolbar > .tools {
-  padding-right: 20px;
-  line-height: 60px;
-  text-align: right;
+.view > .main {
+  position: fixed;
+  top: 82px;
+  left: 61px;
+  right: 301px;
+  bottom: 0;
+  overflow: auto;
 }
-.view .main-wrapper {
-  height: 100%;
-}
-.view .main-wrapper > .menu {
-  float: left;
+.view > .menu {
+  position: fixed;
   width: 300px;
-  height: 100%;
+  top: 41px;
+  right: 0;
+  bottom: 0;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 20px;
   background-color: #f6f6f6;
-  border-right: 1px solid #c8c8c8;
+  border-left: 1px solid #c8c8c8;
 }
-.view .main-wrapper > .menu .nav-header {
+.view > .menu .nav-header {
   margin-bottom: 15px;
   padding-right: 0;
   padding-left: 0;
   border-bottom: 1px solid #eeeeee;
 }
-.view .main-wrapper > .menu .section {
-  margin-bottom: 30px;
+.view > .menu .section {
+  margin: 10px;
 }
-.view .main-wrapper > .menu .badge {
+.view > .menu .badge {
   display: inline-block;
   float: right;
 }
-.view .main-wrapper > .menu .nav-list li a {
+.view > .menu .nav-list li a {
   padding-right: 3px;
   padding-left: 3px;
 }
-.view .main-wrapper > .menu .selector {
+.view > .menu .selector {
   margin-bottom: 15px;
 }
-.view .main-wrapper > .menu .selector li a {
+.view > .menu .selector li a {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-.view .main-wrapper > .menu .selector li.active a {
+.view > .menu .selector li.active a {
   background-color: #999999;
 }
-.view .main-wrapper > .main {
-  height: 100%;
-  margin-left: 300px;
-  overflow: auto;
+.toolbar {
+  margin-right: 8px;
+  line-height: 40px;
 }

@@ -26,7 +26,6 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
   height: @topbarHeight;
   overflow: hidden;
 
@@ -70,7 +69,7 @@
 
 .leftbar {
   position: fixed;
-  top: @topbarHeight;
+  top: @topbarHeight + 1;
   bottom: 0;
   left: 0;
   width: @leftbarWidth - 1; // -1 to allow for border
@@ -145,93 +144,95 @@
   left: @leftbarWidth;
   overflow: hidden;
 
-  > .toolbar {
-    position: relative; // needed to z-index this to show the drop-shadow over other elements
-    z-index: 5;
-    height: @toolbarHeight;
+  > .headline {
+    position: fixed; // needed to z-index this to show the drop-shadow over other elements
+    top: @topbarHeight;
+    right: @viewMenuWidth;
+    left: @leftbarWidth;
+    height: @headlineBarHeight;
 
     overflow: hidden;
 
-    border-bottom: 1px @borderColor;
-    .box-shadow(0 0 5px @grayLight);
+    border-bottom: 1px solid @borderColor;
 
     > div {
-      height: @toolbarHeight;
+      height: @headlineBarHeight;
     }
 
     > .title {
-      padding-left: 20px;
-      font-size: 36px;
-      line-height: @toolbarHeight;
-    }
-
-    > .tools {
-      padding-right: 20px;
-      line-height: @toolbarHeight;
-      text-align: right;
+      padding-left: 10px;
+      font-size: 28px;
+      line-height: @headlineBarHeight;
     }
   }
 
-  .main-wrapper {
-    height: 100%;
+  // the main content area fills the rest of the view container
+  > .main {
+    position: fixed;
+    top: @topbarHeight + @headlineBarHeight + 2;
+    left: @leftbarWidth + 1;
+    right: @viewMenuWidth + 1;
+    bottom: 0;
+    overflow: auto;
+  }
 
-    // the menu area is docked to the left of the viewport
-    > .menu {
-      float: left;
-      width: @viewMenuWidth;
-      height: 100%;
+  // the menu area is docked to the left of the viewport
+  > .menu {
+    position: fixed;
+    width: @viewMenuWidth;
+    top: @topbarHeight + 1;
+    right: 0;
+    bottom: 0;
 
-      // provide a vertical scrollbar if necessary
-      overflow-x: hidden;
-      overflow-y: auto;
-      
-      padding: 20px;
+    // provide a vertical scrollbar if necessary
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    background-color: lighten(@grayLighter, 3%);
+    border-left: 1px solid @borderColor;
 
-      background-color: lighten(@grayLighter, 3%);
-      border-right: 1px solid @borderColor;
+    .nav-header {
+      margin-bottom: 15px;
+      padding-right: 0;
+      padding-left: 0;
+      border-bottom: 1px solid @grayLighter;
+    }
 
-      .nav-header {
-        margin-bottom: 15px;
-        padding-right: 0;
-        padding-left: 0;
-        border-bottom: 1px solid @grayLighter;
-      }
+    .section {
+      margin: 10px;
+    }
 
-      .section {
-        margin-bottom: 30px;
-      }
+    .badge {
+      display: inline-block;
+      float: right;
+    }
 
-      .badge {
-        display: inline-block;
-        float: right;
-      }
+    .nav-list li a {
+      padding-right: 3px;
+      padding-left: 3px;
+    }
 
-      .nav-list li a {
-        padding-right: 3px;
-        padding-left: 3px;
-      }
+    .selector {
+      margin-bottom: 15px;
 
-      .selector {
-        margin-bottom: 15px;
-
-        li a {
-        .border-radius(@borderRadiusLarge);
-        }
-      }
-
-      .selector li.active a {
-        background-color: @grayLight;
+      li a {
+      .border-radius(@borderRadiusLarge);
       }
     }
 
-    // the main content area fills the rest of the view container
-    > .main {
-      height: 100%;
-      margin-left: @viewMenuWidth;
-      overflow: auto;
+    .selector li.active a {
+      background-color: @grayLight;
     }
   }
 }
 
+
+// Toolbars
+// ------------------------------------
+
+.toolbar {
+  margin-right: 8px;
+  line-height: @headlineBarHeight;
+}
 
 

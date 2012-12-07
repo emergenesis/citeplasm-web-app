@@ -28,7 +28,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.72647009"
-     inkscape:cx="660.06747"
+     inkscape:cx="446.01874"
      inkscape:cy="322.96098"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
@@ -67,7 +67,7 @@
      style="display:inline">
     <path
        sodipodi:type="arc"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        id="path3763"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -87,11 +87,11 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3785"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        id="path3787"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -111,11 +111,11 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3789"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        id="path3791"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -135,11 +135,11 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3793"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        id="path3795"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -159,7 +159,7 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3797"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
   </g>
   <g
@@ -170,7 +170,7 @@
      transform="translate(-31.319833,-235.99285)">
     <path
        sodipodi:type="arc"
-       style="fill:#e7ebf0;fill-opacity:1;stroke:none"
+       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
        id="path3911"
        sodipodi:cx="176.7767"
        sodipodi:cy="52.139988"
@@ -189,7 +189,7 @@
      transform="translate(-31.319833,-235.99285)">
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:26.78002167px;word-spacing:0px;fill:#e7ebf0;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Segoe UI Bold"
+       style="font-size:40px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:26.78002167000000000px;word-spacing:0px;fill:#f1f0ff;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Segoe UI Bold"
        x="273.83701"
        y="378.60223"
        id="text3899"
@@ -201,6 +201,6 @@
          id="tspan3901"
          x="273.83701"
          y="378.60223"
-         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:26.78002167px;fill:#e7ebf0;fill-opacity:1;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">[cîtëplasm]</tspan></text>
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:26.78002167000000000px;fill:#f1f0ff;fill-opacity:1;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">[cîtëplasm]</tspan></text>
   </g>
 </svg>

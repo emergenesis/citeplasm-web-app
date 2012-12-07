@@ -12,6 +12,8 @@
 @import "bootstrap/less/buttons.less";
 @import "bootstrap/less/button-groups.less";
 @import "bootstrap/less/breadcrumbs.less";
+@import "bootstrap/less/navs.less";
+@import "bootstrap/less/labels-badges.less";
 @import "font-awesome.less";
 
 
@@ -183,10 +185,43 @@
       overflow-x: hidden;
       overflow-y: auto;
       
-      padding-left: 20px;
+      padding: 20px;
 
       background-color: lighten(@grayLighter, 3%);
       border-right: 1px solid @borderColor;
+
+      .nav-header {
+        margin-bottom: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        border-bottom: 1px solid @grayLighter;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      .badge {
+        display: inline-block;
+        float: right;
+      }
+
+      .nav-list li a {
+        padding-right: 3px;
+        padding-left: 3px;
+      }
+
+      .selector {
+        margin-bottom: 15px;
+
+        li a {
+        .border-radius(@borderRadiusLarge);
+        }
+      }
+
+      .selector li.active a {
+        background-color: @grayLight;
+      }
     }
 
     // the main content area fills the rest of the view container

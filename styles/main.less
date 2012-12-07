@@ -8,7 +8,6 @@
 @import "bootstrap/less/reset.less";
 @import "bootstrap/less/type.less";
 @import "bootstrap/less/scaffolding.less";
-@import "bootstrap/less/dropdowns.less";
 @import "font-awesome.less";
 
 
@@ -19,15 +18,14 @@
 .topbar {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
+  z-index: 10;
   height: @topbarHeight;
   overflow: hidden;
-  z-index: 10;
 
-  //background-color: @topbarColor;
-  border-bottom: 1px solid darken(@topbarColor, 15%);
   #gradient > .vertical(lighten(@topbarColor, 10%), @topbarColor);
+  border-bottom: 1px solid darken(@topbarColor, 15%);
 
   .brand {
     display: block;
@@ -46,11 +44,15 @@
     margin-top: (@topbarHeight - 24px) / 2;
     margin-right: @topbarGutter;
 
-    .caret {
-      display: inline-block;
+    .icon-caret-down {
+      //display: inline-block;
       margin-left: 3px;
-      vertical-align: middle;
-      border-top-color: #F1F1F1;
+      //vertical-align: middle;
+      color: #F1F1F1;
+    }
+
+    &:hover {
+      text-decoration: none;
     }
   }
 }
@@ -63,8 +65,8 @@
 .leftbar {
   position: fixed;
   top: @topbarHeight;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: @leftbarWidth - 1; // -1 to allow for border
   overflow: hidden;
 
@@ -73,27 +75,28 @@
 
   .main-menu, .bottom-menu {
     overflow: hidden;
-    li {
-      font-size: 30px;
-      line-height: 30px;
-      text-align: center;
-    }
+  }
     
-    [class^="icon-"],
-    [class*=" icon-"] {
-      color: @grayLight;
-    }
+  li {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  [class^="icon-"],
+  [class*=" icon-"] {
+    color: @grayLight;
+  }
 
-    li.active [class^="icon-"],
-    li.active [class*=" icon-"],
-    a:hover [class^="icon-"],
-    a:hover [class*=" icon-"] {
-      color: @gray;
-    }
+  .active [class^="icon-"],
+  .active [class*=" icon-"],
+  a:hover [class^="icon-"],
+  a:hover [class*=" icon-"] {
+    color: @gray;
+  }
 
-    a:hover {
-      text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
   }
 
   .main-menu {
@@ -120,15 +123,15 @@
 .view {
   position: fixed;
   top: @topbarHeight;
-  left: @leftbarWidth;
   right: 0;
   bottom: 0;
+  left: @leftbarWidth;
   overflow: hidden;
 
   > .toolbar {
     position: relative; // needed to z-index this to show the drop-shadow over other elements
-    height: @toolbarHeight;
     z-index: 5;
+    height: @toolbarHeight;
 
     overflow: hidden;
 
@@ -142,12 +145,12 @@
     // the menu area is docked to the left of the viewport
     > .menu {
       float: left;
-      height: 100%;
       width: @viewMenuWidth;
+      height: 100%;
 
       // provide a vertical scrollbar if necessary
-      overflow-y: auto;
       overflow-x: hidden;
+      overflow-y: auto;
 
       background-color: lighten(@grayLighter, 3%);
       border-right: 1px solid @borderColor;
@@ -156,8 +159,8 @@
     // the main content area fills the rest of the view container
     > .main {
       height: 100%;
-      overflow: auto;
       margin-left: @viewMenuWidth;
+      overflow: auto;
     }
   }
 }

@@ -7,7 +7,11 @@
 @import "bootstrap/less/mixins.less";
 @import "bootstrap/less/reset.less";
 @import "bootstrap/less/type.less";
+@import "bootstrap/less/utilities.less";
 @import "bootstrap/less/scaffolding.less";
+@import "bootstrap/less/buttons.less";
+@import "bootstrap/less/button-groups.less";
+@import "bootstrap/less/breadcrumbs.less";
 @import "font-awesome.less";
 
 
@@ -82,6 +86,10 @@
     line-height: 30px;
     text-align: center;
   }
+
+  a {
+    padding: 5px;
+  }
   
   [class^="icon-"],
   [class*=" icon-"] {
@@ -93,6 +101,13 @@
   a:hover [class^="icon-"],
   a:hover [class*=" icon-"] {
     color: @gray;
+  }
+
+  .active a,
+  .active a {
+    border: 1px solid rgba(0,0,0,.1);
+    .border-radius(@borderRadiusLarge);
+    .box-shadow(inset 1px 1px 1px rgba(0,0,0,.2));
   }
 
   a:hover {
@@ -137,6 +152,22 @@
 
     border-bottom: 1px @borderColor;
     .box-shadow(0 0 5px @grayLight);
+
+    > div {
+      height: @toolbarHeight;
+    }
+
+    > .title {
+      padding-left: 20px;
+      font-size: 36px;
+      line-height: @toolbarHeight;
+    }
+
+    > .tools {
+      padding-right: 20px;
+      line-height: @toolbarHeight;
+      text-align: right;
+    }
   }
 
   .main-wrapper {
@@ -151,6 +182,8 @@
       // provide a vertical scrollbar if necessary
       overflow-x: hidden;
       overflow-y: auto;
+      
+      padding-left: 20px;
 
       background-color: lighten(@grayLighter, 3%);
       border-right: 1px solid @borderColor;

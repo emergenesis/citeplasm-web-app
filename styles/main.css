@@ -1,18 +1,15 @@
 .clearfix {
   *zoom: 1;
 }
-
 .clearfix:before,
 .clearfix:after {
   display: table;
-  line-height: 0;
   content: "";
+  line-height: 0;
 }
-
 .clearfix:after {
   clear: both;
 }
-
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -20,16 +17,14 @@
   background-color: transparent;
   border: 0;
 }
-
 .input-block-level {
   display: block;
   width: 100%;
   min-height: 30px;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 article,
 aside,
 details,
@@ -42,7 +37,6 @@ nav,
 section {
   display: block;
 }
-
 audio,
 canvas,
 video {
@@ -50,28 +44,23 @@ video {
   *display: inline;
   *zoom: 1;
 }
-
 audio:not([controls]) {
   display: none;
 }
-
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
-
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-
 a:hover,
 a:active {
   outline: 0;
 }
-
 sub,
 sup {
   position: relative;
@@ -79,29 +68,32 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
-
 sup {
   top: -0.5em;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 img {
-  width: auto\9;
-  height: auto;
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
   max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-
 #map_canvas img,
 .google-maps img {
   max-width: none;
 }
-
 button,
 input,
 select,
@@ -110,107 +102,85 @@ textarea {
   font-size: 100%;
   vertical-align: middle;
 }
-
 button,
 input {
   *overflow: visible;
   line-height: normal;
 }
-
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer;
   -webkit-appearance: button;
+  cursor: pointer;
 }
-
 input[type="search"] {
   -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
   -webkit-appearance: textfield;
 }
-
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
-
 textarea {
   overflow: auto;
   vertical-align: top;
 }
-
 p {
   margin: 0 0 10px;
 }
-
 .lead {
   margin-bottom: 20px;
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
 }
-
 small {
   font-size: 85%;
 }
-
 strong {
   font-weight: bold;
 }
-
 em {
   font-style: italic;
 }
-
 cite {
   font-style: normal;
 }
-
 .muted {
   color: #999999;
 }
-
 .text-warning {
   color: #c09853;
 }
-
 a.text-warning:hover {
   color: #a47e3c;
 }
-
 .text-error {
   color: #b94a48;
 }
-
 a.text-error:hover {
   color: #953b39;
 }
-
 .text-info {
   color: #3a87ad;
 }
-
 a.text-info:hover {
   color: #2d6987;
 }
-
 .text-success {
   color: #468847;
 }
-
 a.text-success:hover {
   color: #356635;
 }
-
 h1,
 h2,
 h3,
@@ -224,7 +194,6 @@ h6 {
   color: inherit;
   text-rendering: optimizelegibility;
 }
-
 h1 small,
 h2 small,
 h3 small,
@@ -235,169 +204,136 @@ h6 small {
   line-height: 1;
   color: #999999;
 }
-
 h1,
 h2,
 h3 {
   line-height: 40px;
 }
-
 h1 {
   font-size: 38.5px;
 }
-
 h2 {
   font-size: 31.5px;
 }
-
 h3 {
   font-size: 24.5px;
 }
-
 h4 {
   font-size: 17.5px;
 }
-
 h5 {
   font-size: 14px;
 }
-
 h6 {
   font-size: 11.9px;
 }
-
 h1 small {
   font-size: 24.5px;
 }
-
 h2 small {
   font-size: 17.5px;
 }
-
 h3 small {
   font-size: 14px;
 }
-
 h4 small {
   font-size: 14px;
 }
-
 .page-header {
   padding-bottom: 9px;
   margin: 20px 0 30px;
   border-bottom: 1px solid #eeeeee;
 }
-
 ul,
 ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
-
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin-bottom: 0;
 }
-
 li {
   line-height: 20px;
 }
-
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
-
 dl {
   margin-bottom: 20px;
 }
-
 dt,
 dd {
   line-height: 20px;
 }
-
 dt {
   font-weight: bold;
 }
-
 dd {
   margin-left: 10px;
 }
-
 .dl-horizontal {
   *zoom: 1;
 }
-
 .dl-horizontal:before,
 .dl-horizontal:after {
   display: table;
-  line-height: 0;
   content: "";
+  line-height: 0;
 }
-
 .dl-horizontal:after {
   clear: both;
 }
-
 .dl-horizontal dt {
   float: left;
   width: 160px;
-  overflow: hidden;
   clear: left;
   text-align: right;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
 .dl-horizontal dd {
   margin-left: 180px;
 }
-
 hr {
   margin: 20px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #ffffff;
 }
-
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
-
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
-
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
-
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 25px;
 }
-
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
-
 blockquote small:before {
   content: '\2014 \00A0';
 }
-
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -405,34 +341,46 @@ blockquote.pull-right {
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
-
 blockquote.pull-right small:before {
   content: '';
 }
-
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
-
 q:before,
 q:after,
 blockquote:before,
 blockquote:after {
   content: "";
 }
-
 address {
   display: block;
   margin-bottom: 20px;
   font-style: normal;
   line-height: 20px;
 }
-
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+.affix {
+  position: fixed;
+}
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -441,39 +389,661 @@ body {
   color: #333333;
   background-color: #ffffff;
 }
-
 a {
   color: #0088cc;
   text-decoration: none;
 }
-
 a:hover {
   color: #005580;
   text-decoration: underline;
 }
-
 .img-rounded {
   -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
-
 .img-polaroid {
   padding: 4px;
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
 .img-circle {
   -webkit-border-radius: 500px;
-     -moz-border-radius: 500px;
-          border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
 }
+.btn {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
 
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.btn:active,
+.btn.active {
+  background-color: #cccccc \9;
+}
+.btn:first-child {
+  *margin-left: 0;
+}
+.btn:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+  /* Buttons in IE7 don't get borders, so darken on hover */
+
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn.active,
+.btn:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+.btn.disabled,
+.btn[disabled] {
+  cursor: default;
+  background-color: #e6e6e6;
+  background-image: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-large {
+  padding: 11px 19px;
+  font-size: 17.5px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.btn-large [class^="icon-"],
+.btn-large [class*=" icon-"] {
+  margin-top: 2px;
+}
+.btn-small {
+  padding: 2px 10px;
+  font-size: 11.9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-small [class^="icon-"],
+.btn-small [class*=" icon-"] {
+  margin-top: 0;
+}
+.btn-mini {
+  padding: 1px 6px;
+  font-size: 10.5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+.btn-primary.active,
+.btn-warning.active,
+.btn-danger.active,
+.btn-success.active,
+.btn-info.active,
+.btn-inverse.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn {
+  border-color: #c5c5c5;
+  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #0044cc;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #0044cc;
+  *background-color: #003bb3;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9;
+}
+.btn-warning {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #faa732;
+  background-image: -moz-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -o-linear-gradient(top, #fbb450, #f89406);
+  background-image: linear-gradient(to bottom, #fbb450, #f89406);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbb450', endColorstr='#fff89406', GradientType=0);
+  border-color: #f89406 #f89406 #ad6704;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #f89406;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  color: #ffffff;
+  background-color: #f89406;
+  *background-color: #df8505;
+}
+.btn-warning:active,
+.btn-warning.active {
+  background-color: #c67605 \9;
+}
+.btn-danger {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #bd362f;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled] {
+  color: #ffffff;
+  background-color: #bd362f;
+  *background-color: #a9302a;
+}
+.btn-danger:active,
+.btn-danger.active {
+  background-color: #942a25 \9;
+}
+.btn-success {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(to bottom, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled] {
+  color: #ffffff;
+  background-color: #51a351;
+  *background-color: #499249;
+}
+.btn-success:active,
+.btn-success.active {
+  background-color: #408140 \9;
+}
+.btn-info {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(to bottom, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #2f96b4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-info:hover,
+.btn-info:active,
+.btn-info.active,
+.btn-info.disabled,
+.btn-info[disabled] {
+  color: #ffffff;
+  background-color: #2f96b4;
+  *background-color: #2a85a0;
+}
+.btn-info:active,
+.btn-info.active {
+  background-color: #24748c \9;
+}
+.btn-inverse {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #222222;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.disabled,
+.btn-inverse[disabled] {
+  color: #ffffff;
+  background-color: #222222;
+  *background-color: #151515;
+}
+.btn-inverse:active,
+.btn-inverse.active {
+  background-color: #080808 \9;
+}
+button.btn,
+input[type="submit"].btn {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+button.btn::-moz-focus-inner,
+input[type="submit"].btn::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button.btn.btn-large,
+input[type="submit"].btn.btn-large {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+button.btn.btn-small,
+input[type="submit"].btn.btn-small {
+  *padding-top: 3px;
+  *padding-bottom: 3px;
+}
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+  *padding-top: 1px;
+  *padding-bottom: 1px;
+}
+.btn-link,
+.btn-link:active,
+.btn-link[disabled] {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link {
+  border-color: transparent;
+  cursor: pointer;
+  color: #0088cc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-link:hover {
+  color: #005580;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.btn-link[disabled]:hover {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-group {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  font-size: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  *margin-left: .3em;
+}
+.btn-group:first-child {
+  *margin-left: 0;
+}
+.btn-group + .btn-group {
+  margin-left: 5px;
+}
+.btn-toolbar {
+  font-size: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-toolbar .btn + .btn,
+.btn-toolbar .btn-group + .btn,
+.btn-toolbar .btn + .btn-group {
+  margin-left: 5px;
+}
+.btn-group > .btn {
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-group > .btn + .btn {
+  margin-left: -1px;
+}
+.btn-group > .btn,
+.btn-group > .dropdown-menu {
+  font-size: 14px;
+}
+.btn-group > .btn-mini {
+  font-size: 11px;
+}
+.btn-group > .btn-small {
+  font-size: 12px;
+}
+.btn-group > .btn-large {
+  font-size: 16px;
+}
+.btn-group > .btn:first-child {
+  margin-left: 0;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px;
+}
+.btn-group > .btn:last-child,
+.btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn-group > .btn.large:first-child {
+  margin-left: 0;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-left-radius: 6px;
+}
+.btn-group > .btn.large:last-child,
+.btn-group > .large.dropdown-toggle {
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+}
+.btn-group > .btn:hover,
+.btn-group > .btn:focus,
+.btn-group > .btn:active,
+.btn-group > .btn.active {
+  z-index: 2;
+}
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle {
+  outline: 0;
+}
+.btn-group > .btn + .dropdown-toggle {
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 1px 0 0 rgba(255,255,255,.125), inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  *padding-top: 5px;
+  *padding-bottom: 5px;
+}
+.btn-group > .btn-mini + .dropdown-toggle {
+  padding-left: 5px;
+  padding-right: 5px;
+  *padding-top: 2px;
+  *padding-bottom: 2px;
+}
+.btn-group > .btn-small + .dropdown-toggle {
+  *padding-top: 5px;
+  *padding-bottom: 4px;
+}
+.btn-group > .btn-large + .dropdown-toggle {
+  padding-left: 12px;
+  padding-right: 12px;
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+.btn-group.open .dropdown-toggle {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+.btn-group.open .btn.dropdown-toggle {
+  background-color: #e6e6e6;
+}
+.btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #0044cc;
+}
+.btn-group.open .btn-warning.dropdown-toggle {
+  background-color: #f89406;
+}
+.btn-group.open .btn-danger.dropdown-toggle {
+  background-color: #bd362f;
+}
+.btn-group.open .btn-success.dropdown-toggle {
+  background-color: #51a351;
+}
+.btn-group.open .btn-info.dropdown-toggle {
+  background-color: #2f96b4;
+}
+.btn-group.open .btn-inverse.dropdown-toggle {
+  background-color: #222222;
+}
+.btn .caret {
+  margin-top: 8px;
+  margin-left: 0;
+}
+.btn-mini .caret,
+.btn-small .caret,
+.btn-large .caret {
+  margin-top: 6px;
+}
+.btn-large .caret {
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-top-width: 5px;
+}
+.dropup .btn-large .caret {
+  border-bottom-width: 5px;
+}
+.btn-primary .caret,
+.btn-warning .caret,
+.btn-danger .caret,
+.btn-info .caret,
+.btn-success .caret,
+.btn-inverse .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.btn-group-vertical {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+}
+.btn-group-vertical .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.btn-group-vertical .btn + .btn {
+  margin-left: 0;
+  margin-top: -1px;
+}
+.btn-group-vertical .btn:first-child {
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+}
+.btn-group-vertical .btn:last-child {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+.btn-group-vertical .btn-large:first-child {
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+.btn-group-vertical .btn-large:last-child {
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+}
+.breadcrumb {
+  padding: 8px 15px;
+  margin: 0 0 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.breadcrumb li {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.breadcrumb .divider {
+  padding: 0 5px;
+  color: #ccc;
+}
+.breadcrumb .active {
+  color: #999999;
+}
 /*  Font Awesome
     the iconic font designed for use with Twitter Bootstrap
     -------------------------------------------------------
@@ -497,18 +1067,15 @@ a:hover {
     Work: Lead Product Designer @ http://kyruus.com
 
     */
-
 @font-face {
   font-family: 'FontAwesome';
-  font-style: normal;
-  font-weight: normal;
   src: url('font//fontawesome-webfont.eot');
   src: url('font//fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('font//fontawesome-webfont.woff') format('woff'), url('font//fontawesome-webfont.ttf') format('truetype'), url('font//fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
 /*  Font Awesome styles
     ------------------------------------------------------- */
-
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   display: inline-block;
@@ -517,20 +1084,16 @@ a:hover {
   font-weight: normal;
   text-decoration: inherit;
 }
-
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
   text-decoration: inherit;
 }
-
 /* makes the font 33% larger relative to the icon container */
-
 .icon-large:before {
   font-size: 1.3333333333333333em;
   vertical-align: middle;
 }
-
 .btn [class^="icon-"],
 .nav-tabs [class^="icon-"],
 .btn [class*=" icon-"],
@@ -539,21 +1102,18 @@ a [class*=" icon-"] {
 
   line-height: .9em;
 }
-
 li [class^="icon-"],
 li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center;
 }
-
 li .icon-large:before,
 li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
 
   width: 1.875em;
 }
-
 /*
 ul.icons {
   list-style-type: none;
@@ -574,852 +1134,639 @@ ul.icons {
   }
 }
 */
-
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-
 .icon-glass:before {
   content: "\f000";
 }
-
 .icon-music:before {
   content: "\f001";
 }
-
 .icon-search:before {
   content: "\f002";
 }
-
 .icon-envelope:before {
   content: "\f003";
 }
-
 .icon-heart:before {
   content: "\f004";
 }
-
 .icon-star:before {
   content: "\f005";
 }
-
 .icon-star-empty:before {
   content: "\f006";
 }
-
 .icon-user:before {
   content: "\f007";
 }
-
 .icon-film:before {
   content: "\f008";
 }
-
 .icon-th-large:before {
   content: "\f009";
 }
-
 .icon-th:before {
   content: "\f00a";
 }
-
 .icon-th-list:before {
   content: "\f00b";
 }
-
 .icon-ok:before {
   content: "\f00c";
 }
-
 .icon-remove:before {
   content: "\f00d";
 }
-
 .icon-zoom-in:before {
   content: "\f00e";
 }
-
 .icon-zoom-out:before {
   content: "\f010";
 }
-
 .icon-off:before {
   content: "\f011";
 }
-
 .icon-signal:before {
   content: "\f012";
 }
-
 .icon-cog:before {
   content: "\f013";
 }
-
 .icon-trash:before {
   content: "\f014";
 }
-
 .icon-home:before {
   content: "\f015";
 }
-
 .icon-file:before {
   content: "\f016";
 }
-
 .icon-time:before {
   content: "\f017";
 }
-
 .icon-road:before {
   content: "\f018";
 }
-
 .icon-download-alt:before {
   content: "\f019";
 }
-
 .icon-download:before {
   content: "\f01a";
 }
-
 .icon-upload:before {
   content: "\f01b";
 }
-
 .icon-inbox:before {
   content: "\f01c";
 }
-
 .icon-play-circle:before {
   content: "\f01d";
 }
-
 .icon-repeat:before {
   content: "\f01e";
 }
-
 /* \f020 doesn't work in Safari. all shifted one down */
-
 .icon-refresh:before {
   content: "\f021";
 }
-
 .icon-list-alt:before {
   content: "\f022";
 }
-
 .icon-lock:before {
   content: "\f023";
 }
-
 .icon-flag:before {
   content: "\f024";
 }
-
 .icon-headphones:before {
   content: "\f025";
 }
-
 .icon-volume-off:before {
   content: "\f026";
 }
-
 .icon-volume-down:before {
   content: "\f027";
 }
-
 .icon-volume-up:before {
   content: "\f028";
 }
-
 .icon-qrcode:before {
   content: "\f029";
 }
-
 .icon-barcode:before {
   content: "\f02a";
 }
-
 .icon-tag:before {
   content: "\f02b";
 }
-
 .icon-tags:before {
   content: "\f02c";
 }
-
 .icon-book:before {
   content: "\f02d";
 }
-
 .icon-bookmark:before {
   content: "\f02e";
 }
-
 .icon-print:before {
   content: "\f02f";
 }
-
 .icon-camera:before {
   content: "\f030";
 }
-
 .icon-font:before {
   content: "\f031";
 }
-
 .icon-bold:before {
   content: "\f032";
 }
-
 .icon-italic:before {
   content: "\f033";
 }
-
 .icon-text-height:before {
   content: "\f034";
 }
-
 .icon-text-width:before {
   content: "\f035";
 }
-
 .icon-align-left:before {
   content: "\f036";
 }
-
 .icon-align-center:before {
   content: "\f037";
 }
-
 .icon-align-right:before {
   content: "\f038";
 }
-
 .icon-align-justify:before {
   content: "\f039";
 }
-
 .icon-list:before {
   content: "\f03a";
 }
-
 .icon-indent-left:before {
   content: "\f03b";
 }
-
 .icon-indent-right:before {
   content: "\f03c";
 }
-
 .icon-facetime-video:before {
   content: "\f03d";
 }
-
 .icon-picture:before {
   content: "\f03e";
 }
-
 .icon-pencil:before {
   content: "\f040";
 }
-
 .icon-map-marker:before {
   content: "\f041";
 }
-
 .icon-adjust:before {
   content: "\f042";
 }
-
 .icon-tint:before {
   content: "\f043";
 }
-
 .icon-edit:before {
   content: "\f044";
 }
-
 .icon-share:before {
   content: "\f045";
 }
-
 .icon-check:before {
   content: "\f046";
 }
-
 .icon-move:before {
   content: "\f047";
 }
-
 .icon-step-backward:before {
   content: "\f048";
 }
-
 .icon-fast-backward:before {
   content: "\f049";
 }
-
 .icon-backward:before {
   content: "\f04a";
 }
-
 .icon-play:before {
   content: "\f04b";
 }
-
 .icon-pause:before {
   content: "\f04c";
 }
-
 .icon-stop:before {
   content: "\f04d";
 }
-
 .icon-forward:before {
   content: "\f04e";
 }
-
 .icon-fast-forward:before {
   content: "\f050";
 }
-
 .icon-step-forward:before {
   content: "\f051";
 }
-
 .icon-eject:before {
   content: "\f052";
 }
-
 .icon-chevron-left:before {
   content: "\f053";
 }
-
 .icon-chevron-right:before {
   content: "\f054";
 }
-
 .icon-plus-sign:before {
   content: "\f055";
 }
-
 .icon-minus-sign:before {
   content: "\f056";
 }
-
 .icon-remove-sign:before {
   content: "\f057";
 }
-
 .icon-ok-sign:before {
   content: "\f058";
 }
-
 .icon-question-sign:before {
   content: "\f059";
 }
-
 .icon-info-sign:before {
   content: "\f05a";
 }
-
 .icon-screenshot:before {
   content: "\f05b";
 }
-
 .icon-remove-circle:before {
   content: "\f05c";
 }
-
 .icon-ok-circle:before {
   content: "\f05d";
 }
-
 .icon-ban-circle:before {
   content: "\f05e";
 }
-
 .icon-arrow-left:before {
   content: "\f060";
 }
-
 .icon-arrow-right:before {
   content: "\f061";
 }
-
 .icon-arrow-up:before {
   content: "\f062";
 }
-
 .icon-arrow-down:before {
   content: "\f063";
 }
-
 .icon-share-alt:before {
   content: "\f064";
 }
-
 .icon-resize-full:before {
   content: "\f065";
 }
-
 .icon-resize-small:before {
   content: "\f066";
 }
-
 .icon-plus:before {
   content: "\f067";
 }
-
 .icon-minus:before {
   content: "\f068";
 }
-
 .icon-asterisk:before {
   content: "\f069";
 }
-
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
-
 .icon-gift:before {
   content: "\f06b";
 }
-
 .icon-leaf:before {
   content: "\f06c";
 }
-
 .icon-fire:before {
   content: "\f06d";
 }
-
 .icon-eye-open:before {
   content: "\f06e";
 }
-
 .icon-eye-close:before {
   content: "\f070";
 }
-
 .icon-warning-sign:before {
   content: "\f071";
 }
-
 .icon-plane:before {
   content: "\f072";
 }
-
 .icon-calendar:before {
   content: "\f073";
 }
-
 .icon-random:before {
   content: "\f074";
 }
-
 .icon-comment:before {
   content: "\f075";
 }
-
 .icon-magnet:before {
   content: "\f076";
 }
-
 .icon-chevron-up:before {
   content: "\f077";
 }
-
 .icon-chevron-down:before {
   content: "\f078";
 }
-
 .icon-retweet:before {
   content: "\f079";
 }
-
 .icon-shopping-cart:before {
   content: "\f07a";
 }
-
 .icon-folder-close:before {
   content: "\f07b";
 }
-
 .icon-folder-open:before {
   content: "\f07c";
 }
-
 .icon-resize-vertical:before {
   content: "\f07d";
 }
-
 .icon-resize-horizontal:before {
   content: "\f07e";
 }
-
 .icon-bar-chart:before {
   content: "\f080";
 }
-
 .icon-twitter-sign:before {
   content: "\f081";
 }
-
 .icon-facebook-sign:before {
   content: "\f082";
 }
-
 .icon-camera-retro:before {
   content: "\f083";
 }
-
 .icon-key:before {
   content: "\f084";
 }
-
 .icon-cogs:before {
   content: "\f085";
 }
-
 .icon-comments:before {
   content: "\f086";
 }
-
 .icon-thumbs-up:before {
   content: "\f087";
 }
-
 .icon-thumbs-down:before {
   content: "\f088";
 }
-
 .icon-star-half:before {
   content: "\f089";
 }
-
 .icon-heart-empty:before {
   content: "\f08a";
 }
-
 .icon-signout:before {
   content: "\f08b";
 }
-
 .icon-linkedin-sign:before {
   content: "\f08c";
 }
-
 .icon-pushpin:before {
   content: "\f08d";
 }
-
 .icon-external-link:before {
   content: "\f08e";
 }
-
 .icon-signin:before {
   content: "\f090";
 }
-
 .icon-trophy:before {
   content: "\f091";
 }
-
 .icon-github-sign:before {
   content: "\f092";
 }
-
 .icon-upload-alt:before {
   content: "\f093";
 }
-
 .icon-lemon:before {
   content: "\f094";
 }
-
 .icon-phone:before {
   content: "\f095";
 }
-
 .icon-check-empty:before {
   content: "\f096";
 }
-
 .icon-bookmark-empty:before {
   content: "\f097";
 }
-
 .icon-phone-sign:before {
   content: "\f098";
 }
-
 .icon-twitter:before {
   content: "\f099";
 }
-
 .icon-facebook:before {
   content: "\f09a";
 }
-
 .icon-github:before {
   content: "\f09b";
 }
-
 .icon-unlock:before {
   content: "\f09c";
 }
-
 .icon-credit-card:before {
   content: "\f09d";
 }
-
 .icon-rss:before {
   content: "\f09e";
 }
-
 .icon-hdd:before {
   content: "\f0a0";
 }
-
 .icon-bullhorn:before {
   content: "\f0a1";
 }
-
 .icon-bell:before {
   content: "\f0a2";
 }
-
 .icon-certificate:before {
   content: "\f0a3";
 }
-
 .icon-hand-right:before {
   content: "\f0a4";
 }
-
 .icon-hand-left:before {
   content: "\f0a5";
 }
-
 .icon-hand-up:before {
   content: "\f0a6";
 }
-
 .icon-hand-down:before {
   content: "\f0a7";
 }
-
 .icon-circle-arrow-left:before {
   content: "\f0a8";
 }
-
 .icon-circle-arrow-right:before {
   content: "\f0a9";
 }
-
 .icon-circle-arrow-up:before {
   content: "\f0aa";
 }
-
 .icon-circle-arrow-down:before {
   content: "\f0ab";
 }
-
 .icon-globe:before {
   content: "\f0ac";
 }
-
 .icon-wrench:before {
   content: "\f0ad";
 }
-
 .icon-tasks:before {
   content: "\f0ae";
 }
-
 .icon-filter:before {
   content: "\f0b0";
 }
-
 .icon-briefcase:before {
   content: "\f0b1";
 }
-
 .icon-fullscreen:before {
   content: "\f0b2";
 }
-
 .icon-group:before {
   content: "\f0c0";
 }
-
 .icon-link:before {
   content: "\f0c1";
 }
-
 .icon-cloud:before {
   content: "\f0c2";
 }
-
 .icon-beaker:before {
   content: "\f0c3";
 }
-
 .icon-cut:before {
   content: "\f0c4";
 }
-
 .icon-copy:before {
   content: "\f0c5";
 }
-
 .icon-paper-clip:before {
   content: "\f0c6";
 }
-
 .icon-save:before {
   content: "\f0c7";
 }
-
 .icon-sign-blank:before {
   content: "\f0c8";
 }
-
 .icon-reorder:before {
   content: "\f0c9";
 }
-
 .icon-list-ul:before {
   content: "\f0ca";
 }
-
 .icon-list-ol:before {
   content: "\f0cb";
 }
-
 .icon-strikethrough:before {
   content: "\f0cc";
 }
-
 .icon-underline:before {
   content: "\f0cd";
 }
-
 .icon-table:before {
   content: "\f0ce";
 }
-
 .icon-magic:before {
   content: "\f0d0";
 }
-
 .icon-truck:before {
   content: "\f0d1";
 }
-
 .icon-pinterest:before {
   content: "\f0d2";
 }
-
 .icon-pinterest-sign:before {
   content: "\f0d3";
 }
-
 .icon-google-plus-sign:before {
   content: "\f0d4";
 }
-
 .icon-google-plus:before {
   content: "\f0d5";
 }
-
 .icon-money:before {
   content: "\f0d6";
 }
-
 .icon-caret-down:before {
   content: "\f0d7";
 }
-
 .icon-caret-up:before {
   content: "\f0d8";
 }
-
 .icon-caret-left:before {
   content: "\f0d9";
 }
-
 .icon-caret-right:before {
   content: "\f0da";
 }
-
 .icon-columns:before {
   content: "\f0db";
 }
-
 .icon-sort:before {
   content: "\f0dc";
 }
-
 .icon-sort-down:before {
   content: "\f0dd";
 }
-
 .icon-sort-up:before {
   content: "\f0de";
 }
-
 .icon-envelope-alt:before {
   content: "\f0e0";
 }
-
 .icon-linkedin:before {
   content: "\f0e1";
 }
-
 .icon-undo:before {
   content: "\f0e2";
 }
-
 .icon-legal:before {
   content: "\f0e3";
 }
-
 .icon-dashboard:before {
   content: "\f0e4";
 }
-
 .icon-comment-alt:before {
   content: "\f0e5";
 }
-
 .icon-comments-alt:before {
   content: "\f0e6";
 }
-
 .icon-bolt:before {
   content: "\f0e7";
 }
-
 .icon-sitemap:before {
   content: "\f0e8";
 }
-
 .icon-umbrella:before {
   content: "\f0e9";
 }
-
 .icon-paste:before {
   content: "\f0ea";
 }
-
 .icon-user-md:before {
   content: "\f200";
 }
-
 .topbar {
   position: fixed;
   top: 0;
@@ -1435,37 +1782,31 @@ ul.icons {
   background-image: -o-linear-gradient(top, #a562b8, #8c489f);
   background-image: linear-gradient(to bottom, #a562b8, #8c489f);
   background-repeat: repeat-x;
-  border-bottom: 1px solid #5e306a;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa562b8', endColorstr='#ff8c489f', GradientType=0);
+  border-bottom: 1px solid #5e306a;
 }
-
 .topbar .brand {
   display: block;
   float: left;
   margin-top: 7.5px;
   margin-left: 10px;
 }
-
 .topbar .brand img {
   height: 25px;
 }
-
 .topbar .user {
   display: block;
   float: right;
   margin-top: 8px;
   margin-right: 10px;
 }
-
 .topbar .user .icon-caret-down {
   margin-left: 3px;
   color: #F1F1F1;
 }
-
 .topbar .user:hover {
   text-decoration: none;
 }
-
 .leftbar {
   position: fixed;
   top: 40px;
@@ -1476,42 +1817,47 @@ ul.icons {
   background-color: #e6e6e6;
   border-right: 1px solid #c8c8c8;
 }
-
 .leftbar .main-menu,
 .leftbar .bottom-menu {
   overflow: hidden;
 }
-
 .leftbar li {
   font-size: 30px;
   line-height: 30px;
   text-align: center;
 }
-
+.leftbar a {
+  padding: 5px;
+}
 .leftbar [class^="icon-"],
 .leftbar [class*=" icon-"] {
   color: #999999;
 }
-
 .leftbar .active [class^="icon-"],
 .leftbar .active [class*=" icon-"],
 .leftbar a:hover [class^="icon-"],
 .leftbar a:hover [class*=" icon-"] {
   color: #555555;
 }
-
+.leftbar .active a,
+.leftbar .active a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
 .leftbar a:hover {
   text-decoration: none;
 }
-
 .leftbar .main-menu {
   margin-top: 20px;
 }
-
 .leftbar .main-menu li {
   margin-bottom: 20px;
 }
-
 .leftbar .bottom-menu {
   position: absolute;
   bottom: 0;
@@ -1519,7 +1865,6 @@ ul.icons {
   width: 60px;
   margin-bottom: 20px;
 }
-
 .view {
   position: fixed;
   top: 40px;
@@ -1528,7 +1873,6 @@ ul.icons {
   left: 60px;
   overflow: hidden;
 }
-
 .view > .toolbar {
   position: relative;
   z-index: 5;
@@ -1536,24 +1880,35 @@ ul.icons {
   overflow: hidden;
   border-bottom: 1px #c8c8c8;
   -webkit-box-shadow: 0 0 5px #999999;
-     -moz-box-shadow: 0 0 5px #999999;
-          box-shadow: 0 0 5px #999999;
+  -moz-box-shadow: 0 0 5px #999999;
+  box-shadow: 0 0 5px #999999;
 }
-
+.view > .toolbar > div {
+  height: 60px;
+}
+.view > .toolbar > .title {
+  padding-left: 20px;
+  font-size: 36px;
+  line-height: 60px;
+}
+.view > .toolbar > .tools {
+  padding-right: 20px;
+  line-height: 60px;
+  text-align: right;
+}
 .view .main-wrapper {
   height: 100%;
 }
-
 .view .main-wrapper > .menu {
   float: left;
   width: 300px;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  padding-left: 20px;
   background-color: #f6f6f6;
   border-right: 1px solid #c8c8c8;
 }
-
 .view .main-wrapper > .main {
   height: 100%;
   margin-left: 300px;

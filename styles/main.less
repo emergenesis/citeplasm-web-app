@@ -13,6 +13,7 @@
 @import "bootstrap/less/button-groups.less";
 @import "bootstrap/less/breadcrumbs.less";
 @import "bootstrap/less/navs.less";
+@import "bootstrap/less/dropdowns.less";
 @import "bootstrap/less/labels-badges.less";
 @import "font-awesome.less";
 
@@ -27,20 +28,26 @@
   right: 0;
   left: 0;
   height: @topbarHeight;
-  overflow: hidden;
+  z-index: 10;
 
   #gradient > .vertical(lighten(@topbarColor, 10%), @topbarColor);
-  border-bottom: 1px solid darken(@topbarColor, 15%);
+  border-bottom: 1px solid darken(@topbarColor, 20%);
+  .box-shadow(0 3px 10px rgba(0, 0, 0, .25));
 
   .brand {
     display: block;
     float: left;
     margin-top: (@topbarHeight - @topbarLogoHeight) / 2;
+    margin-right: 40px;
     margin-left: @topbarGutter;
 
     img {
-      height: @topbarHeight - 15px;
+      height: @topbarLogoHeight;
     }
+  }
+
+  .toolbar {
+    line-height: @topbarHeight;
   }
 
   .user {
@@ -49,11 +56,10 @@
     margin-top: (@topbarHeight - 24px) / 2;
     margin-right: @topbarGutter;
 
-    .icon-caret-down {
-      //display: inline-block;
+    .caret {
       margin-left: 3px;
-      //vertical-align: middle;
-      color: #F1F1F1;
+      color: @grayDark;
+      vertical-align: middle;
     }
 
     &:hover {
@@ -75,7 +81,7 @@
   width: @leftbarWidth - 1; // -1 to allow for border
   overflow: hidden;
 
-  background-color: darken(@grayLighter, 3%);
+  background-color: lighten(@grayLighter, 3%);
   border-right: 1px solid @borderColor;
 
   .main-menu, .bottom-menu {
@@ -83,13 +89,14 @@
   }
     
   li {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
     text-align: center;
   }
 
   a {
-    padding: 5px;
+    padding: 3px;
+    .border-radius(@borderRadiusLarge);
   }
   
   [class^="icon-"],
@@ -97,18 +104,25 @@
     color: @grayLight;
   }
 
-  .active [class^="icon-"],
-  .active [class*=" icon-"],
   a:hover [class^="icon-"],
-  a:hover [class*=" icon-"] {
+  a:hover [class*=" icon-"],
+  .active [class^="icon-"],
+  .active [class*=" icon-"] {
     color: @gray;
+  }
+
+  a:hover,
+  a:hover {
+    border: 1px solid rgba(0,0,0,.1);
+    .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05)");
+    background-position: 0 -15px;
   }
 
   .active a,
   .active a {
     border: 1px solid rgba(0,0,0,.1);
-    .border-radius(@borderRadiusLarge);
     .box-shadow(inset 1px 1px 1px rgba(0,0,0,.2));
+    color: @gray;
   }
 
   a:hover {
@@ -116,7 +130,7 @@
   }
 
   .main-menu {
-    margin-top: 20px;
+    padding-top: 20px;
 
     li {
       margin-bottom: 20px;
@@ -128,7 +142,8 @@
     bottom: 0;
     left: 0;
     width: @leftbarWidth;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -144,36 +159,24 @@
   left: @leftbarWidth;
   overflow: hidden;
 
-  > .headline {
-    position: fixed; // needed to z-index this to show the drop-shadow over other elements
-    top: @topbarHeight;
-    right: @viewMenuWidth;
-    left: @leftbarWidth;
-    height: @headlineBarHeight;
-
-    overflow: hidden;
-
-    border-bottom: 1px solid @borderColor;
-
-    > div {
-      height: @headlineBarHeight;
-    }
-
-    > .title {
-      padding-left: 10px;
-      font-size: 28px;
-      line-height: @headlineBarHeight;
-    }
-  }
-
   // the main content area fills the rest of the view container
   > .main {
     position: fixed;
-    top: @topbarHeight + @headlineBarHeight + 2;
+    top: @topbarHeight + 1;
     left: @leftbarWidth + 1;
     right: @viewMenuWidth + 1;
     bottom: 0;
     overflow: auto;
+
+    .title {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-size: 24px;
+    }
+
+    .body {
+      margin: 20px;
+    }
   }
 
   // the menu area is docked to the left of the viewport
@@ -192,10 +195,15 @@
     border-left: 1px solid @borderColor;
 
     .nav-header {
+      margin-top: 20px;
       margin-bottom: 15px;
       padding-right: 0;
       padding-left: 0;
       border-bottom: 1px solid @grayLighter;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
     .section {
@@ -231,8 +239,6 @@
 // ------------------------------------
 
 .toolbar {
-  margin-right: 8px;
-  line-height: @headlineBarHeight;
 }
 
 

@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1417.0674"
-   height="200"
+   width="1476.9725"
+   height="210"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
@@ -28,17 +28,17 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.72647009"
-     inkscape:cx="446.01874"
-     inkscape:cy="322.96098"
+     inkscape:cx="655.31434"
+     inkscape:cy="327.96096"
      inkscape:document-units="px"
      inkscape:current-layer="layer3"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
      showborder="true"
      borderlayer="false"
      inkscape:showpageshadow="false"
@@ -63,11 +63,11 @@
      inkscape:label="Logo Arcs"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-31.319833,-544.26055)"
+     transform="translate(-26.319833,-539.26055)"
      style="display:inline">
     <path
        sodipodi:type="arc"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        id="path3763"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -87,11 +87,11 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3785"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        id="path3787"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -111,11 +111,11 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3789"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        id="path3791"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -135,11 +135,11 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3793"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
     <path
        sodipodi:type="arc"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        id="path3795"
        sodipodi:cx="441.43668"
        sodipodi:cy="424.0473"
@@ -159,7 +159,7 @@
        sodipodi:cy="424.0473"
        sodipodi:cx="441.43668"
        id="path3797"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        sodipodi:type="arc" />
   </g>
   <g
@@ -167,10 +167,10 @@
      id="layer2"
      inkscape:label="Logo Center"
      style="display:inline"
-     transform="translate(-31.319833,-235.99285)">
+     transform="translate(-26.319833,-230.99285)">
     <path
        sodipodi:type="arc"
-       style="fill:#f1f0ff;fill-opacity:1;stroke:none"
+       style="fill:#5b7290;fill-opacity:1;stroke:none"
        id="path3911"
        sodipodi:cx="176.7767"
        sodipodi:cy="52.139988"
@@ -186,12 +186,12 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Logo Text"
-     transform="translate(-31.319833,-235.99285)">
+     transform="translate(-26.319833,-230.99285)">
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:bold;line-height:125%;letter-spacing:26.78002167000000000px;word-spacing:0px;fill:#f1f0ff;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Segoe UI Bold"
-       x="273.83701"
-       y="378.60223"
+       style="font-size:175px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:26.78002167px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#5b7290;fill-opacity:1;stroke:none;display:inline;font-family:Sans;-inkscape-font-specification:Sans"
+       x="258.84915"
+       y="387.77509"
        id="text3899"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/joshua/Development/repos/emergenesis.com/img/text3899.png"
@@ -199,8 +199,8 @@
        inkscape:export-ydpi="18.74"><tspan
          sodipodi:role="line"
          id="tspan3901"
-         x="273.83701"
-         y="378.60223"
-         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:26.78002167000000000px;fill:#f1f0ff;fill-opacity:1;font-family:Segoe UI;-inkscape-font-specification:Segoe UI Bold">[cîtëplasm]</tspan></text>
+         x="258.84915"
+         y="387.77509"
+         style="font-size:175px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:26.78002167px;writing-mode:lr-tb;text-anchor:start;fill:#5b7290;fill-opacity:1;font-family:Sans;-inkscape-font-specification:Sans">[cîtëplasm]</tspan></text>
   </g>
 </svg>
